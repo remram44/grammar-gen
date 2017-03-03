@@ -27,10 +27,10 @@ impl<'a> Parser<'a> {
         c == ' ' || c == '\t'
     }
 
-    fn skip_whitespace(&mut self) {
+    fn skip_whitespace(&mut self, newline: bool) {
         loop {
             if let Some(&(_, c)) = self.iter.peek() {
-                if Self::is_whitespace(c) {
+                if Self::is_whitespace(c) || (newline && c == '\n') {
                     self.iter.next();
                     continue;
                 }
@@ -51,7 +51,7 @@ impl<'a> Parser<'a> {
     }
 
     fn parse_lhs(&mut self) -> Result<Option<Term>, &'static str> {
-        self.skip_whitespace();
+        self.skip_whitespace(true);
         match self.iter.next() {
             None => return Ok(None),
             Some((s, _)) => loop {
@@ -76,7 +76,7 @@ impl<'a> Parser<'a> {
     }
 
     fn parse_rule(&mut self) -> Result<Vec<Item>, &'static str> {
-        self.skip_whitespace();
+        self.skip_whitespace(false);
         let mut items = Vec::new();
         loop {
             match self.iter.next() {
