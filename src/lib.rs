@@ -126,7 +126,7 @@ pub fn parse(grammar: &str) -> Result<Grammar, &'static str> {
 }
 
 #[derive(PartialEq, Eq, Hash, Clone)]
-pub struct Term(String);
+pub struct Term(pub String);
 
 pub enum Item {
     T(String),
@@ -188,6 +188,12 @@ impl Grammar {
                 &Item::N(ref t) => self.generate_rec(result, t, chooser),
             }
         }
+    }
+
+    #[cfg(feature = "rand")]
+    pub fn generate_random(&self, target: &Term) -> String {
+        let mut rng = rand::thread_rng();
+        self.generate(target, &mut rng)
     }
 }
 
