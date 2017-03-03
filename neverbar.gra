@@ -1,0 +1,235 @@
+__comment__ = From galaxykate's tracery <https://github.com/galaxykate/tracery>
+
+vipTitle = Dr.
+vipTitle = Professor
+vipTitle = Lord
+vipTitle = Sir
+vipTitle = Captain
+vipTitle = His Majesty
+
+occupationBase = firefighter
+occupationBase = scientist
+occupationBase = spy
+occupationBase = smuggler
+occupationBase = mechanic
+occupationBase = astronaut
+occupationBase = adventurer
+occupationBase = pirate
+occupationBase = cowboy
+occupationBase = vampire
+occupationBase = detective
+occupationBase = soldier
+occupationBase = marine
+occupationBase = doctor
+occupationBase = ninja
+
+occupation = space {occupationBase}
+occupation = erotic {occupationBase}
+occupation = professional {occupationBase}
+occupation = gentleman {occupationBase}
+occupation = {occupationBase}
+
+name = Chesty
+name = Butch
+name = Saber
+name = Drake
+name = Thorax
+name = Brash
+name = Abs
+name = Burt
+name = Slate
+name = Bret
+name = Duke
+
+surnameStart = Up
+surnameStart = Pants
+surnameStart = Chest
+surnameStart = West
+surnameStart = Long
+surnameStart = East
+surnameStart = North
+surnameStart = River
+surnameStart = South
+surnameStart = Snith
+surnameStart = Cross
+surnameStart = Aft
+surnameStart = Aver
+surnameStart = Ever
+surnameStart = Down
+surnameStart = Whit
+surnameStart = Rob
+surnameStart = Rod
+surnameStart = Hesel
+surnameStart = Kings
+surnameStart = Queens
+surnameStart = Ed
+surnameStart = Sift
+surnameStart = For
+surnameStart = Farring
+surnameStart = Coven
+surnameStart = Craig
+surnameStart = Cath
+surnameStart = Chil
+surnameStart = Clif
+surnameStart = Grit
+surnameStart = Grand
+surnameStart = Orla
+surnameStart = Prat
+surnameStart = Milt
+surnameStart = Wilt
+surnameStart = Berk
+surnameStart = Draft
+surnameStart = Red
+surnameStart = Black
+
+surnameEnd = castle
+surnameEnd = hammer
+surnameEnd = master
+surnameEnd = end
+surnameEnd = wrench
+surnameEnd = bottom
+surnameEnd = hammer
+surnameEnd = wick
+surnameEnd = shire
+surnameEnd = gren
+surnameEnd = glen
+surnameEnd = swith
+surnameEnd = bury
+surnameEnd = every
+surnameEnd = stern
+surnameEnd = ner
+surnameEnd = brath
+surnameEnd = mill
+surnameEnd = bly
+surnameEnd = ham
+surnameEnd = tine
+surnameEnd = field
+surnameEnd = groat
+surnameEnd = sythe
+surnameEnd = well
+surnameEnd = bow
+surnameEnd = bone
+surnameEnd = wind
+surnameEnd = storm
+surnameEnd = horn
+surnameEnd = thorne
+surnameEnd = cart
+surnameEnd = bry
+surnameEnd = ton
+surnameEnd = man
+surnameEnd = watch
+surnameEnd = leath
+surnameEnd = heath
+surnameEnd = ley
+
+
+characterType = android
+characterType = velociraptor
+characterType = dragon
+characterType = gorilla
+characterType = sasquatch
+characterType = alien
+characterType = squid
+characterType = cuttlefish
+
+character = {characterType}
+character = {characterMod} {characterType}
+
+drink = cup of chamomile tea
+drink = glass of milk
+drink = shot of vodka
+drink = dry martini
+drink = fuzzy navel
+drink = appletini
+drink = double shot of gin
+drink = Campari
+drink = glass of champagne
+drink = bottle of Domaine Leroy Musigny Grand Cru
+
+said = purred
+said = whispered
+said = said
+said = murmurred
+said = growled
+
+characterMod = cybernetic
+characterMod = robotic
+
+description = muscled
+description = sexy
+description = dark
+description = well-dressed
+description = masculine
+description = dramatic
+description = dramatically lit
+description = boyish
+description = burly
+description = handsome
+description = erotic
+
+surname = Mc{surnameStart}{surnameEnd}
+surname = {surnameStart}{surnameEnd}
+
+locationAdj = dimly lit
+locationAdj = crowded
+locationAdj = smoke-filled
+
+locationBase = space station
+locationBase = film studio
+locationBase = 70s nightclub
+locationBase = undersea research station
+
+titleNoun = desire
+titleNoun = night
+titleNoun = awakening
+titleNoun = surrender
+titleNoun = obsession
+titleNoun = vision
+titleNoun = proposition
+titleNoun = game
+titleNoun = promise
+titleNoun = arrangement
+titleNoun = treasure
+titleNoun = dream
+titleNoun = embrace
+titleNoun = struggle
+titleNoun = pleasure
+titleNoun = discovery
+titleNoun = wish
+titleNoun = need
+
+titleAdj = ["dark
+titleAdj = erotic
+titleAdj = leather
+titleAdj = rough
+titleAdj = punishing
+titleAdj = burly
+titleAdj = country
+titleAdj = neon
+titleAdj = big-city
+titleAdj = whiskey
+titleAdj = shattered
+titleAdj = broken
+titleAdj = breathless
+titleAdj = tangled
+titleAdj = complicated
+titleAdj = captured
+titleAdj = priceless
+titleAdj = bound
+titleAdj = sinful
+titleAdj = forgotten
+titleAdj = forbidden
+titleAdj = gothic
+titleAdj = interstellar
+
+title = A {titleAdj} {titleNoun}
+title = {name}'s {titleNoun}
+
+
+entry = {name} {surname} walked into the {locationAdj} {locationBase}.
+
+meeting = A {character} was sitting by the bar, alone, {description}, {description}. {name} introduced himself. 'I'm {name}', he {said}. 'I'm a {occupation}. Can I buy you a drink?'
+
+response = The {description} {character} looked at him with interest. 'I'm {name}. {vipTitle} {name} {surname}, {occupation},' the {character} {said}. 'I'll have a {drink}.'
+
+_ = {title} || {entry} {meeting} {response}
