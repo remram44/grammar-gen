@@ -1,0 +1,15 @@
+[package]
+name = "grammar-gen"
+version = "0.1.0"
+authors = ["Remi Rampin <remirampin@gmail.com>"]
+description = "Generates text from a set of rules."
+repository = "https://github.com/remram44/grammar-gen"
+keywords = ["grammar", "text", "generator"]
+license = "BSD-3-Clause"
+
+[features]
+default = ["random"]
+random = ["rand"]
+
+[dependencies]
+rand = { version = "0.3", optional = true }
